@@ -1,5 +1,7 @@
 # Projet EchoStar
-
+## Authors
+Hilman Bin Rokman  
+Anissa Boumahdi
 
 ## Description
 
