@@ -15,11 +15,6 @@ Supports switching control signals via serial commands.
 Uses I2C communication for sensor data acquisition.  
 Handles sensor initialization and configuration.  
 
-## Authors
-
-Hilman Bin Rokman  
-Anissa Boumahdi
-
 ## Hardware Requirements
 Microcontroller with USB and serial communication support  
 EchoStar module  
