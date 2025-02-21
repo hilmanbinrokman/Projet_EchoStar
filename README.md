@@ -39,11 +39,18 @@ Continuously reads sensor data.
 Sends sensor data via EchoStar module.  
 Prints sensor values to USB serial output.  
 
-## Usage
-Ensure the hardware connections are correct and power is supplied.  
-Open the serial monitor (115200 baud) to view sensor readings.  
-The system automatically forwards serial data and logs environmental readings.  
+## Utilisation
+1. Démarrer le programme en connectant le microcontrôleur à votre PC.
+2. Ouvrir un moniteur série avec un baudrate de 115200.
+3. Observer les valeurs mesurées en temps réel.
+4. Si nécessaire, envoyer des commandes UART au module EchoStar.
 
+## Exemple de sortie
+`EchoStar BME680 Test
+Temperature = 24.5 *C
+Pressure = 1012.8 hPa
+Humidity = 50.3 %
+Gas = 150.2 KOhms`
 ## Dépannage
 - Le capteur BME680 n'est pas détecté ?
   - Vérifiez les connexions I2C.
