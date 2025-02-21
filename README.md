@@ -13,30 +13,30 @@ Supports switching control signals via serial commands.
 Uses I2C communication for sensor data acquisition.
 Handles sensor initialization and configuration.
 
-Authors
+## Authors
 
 Hilman Bin Rokman
 Anissa Boumahdi
 
-Hardware Requirements
+## Hardware Requirements
 Microcontroller with USB and serial communication support
 EchoStar module
 BME680 environmental sensor
 Required wiring and power components
 
-Software Requirements
+## Software Requirements
 Arduino IDE (or compatible environment)
 Adafruit BME680 Library (GitHub Repo)
 Wire and SPI libraries
 
-Installation and Setup
+## Installation and Setup
 Connect the BME680 sensor to the MCU via I2C (SDA, SCL).
 Connect the EchoStar module to the appropriate UART pins.
 Install required libraries in the Arduino IDE.
 Upload the provided code to the microcontroller.
 Monitor sensor readings via USB serial output.
 
-Code Overview
+## Code Overview
 
 setup()
 Initializes pins, serial communication, and the BME680 sensor.
@@ -47,15 +47,15 @@ Continuously reads sensor data.
 Sends sensor data via EchoStar module.
 Prints sensor values to USB serial output.
 
-Usage
+## Usage
 Ensure the hardware connections are correct and power is supplied.
 Open the serial monitor (115200 baud) to view sensor readings.
 The system automatically forwards serial data and logs environmental readings.
 
-Troubleshooting
+## Troubleshooting
 If the BME680 sensor is not detected, check the wiring and I2C address.
 Ensure the EchoStar module is correctly powered and connected.
 Verify baud rates match between serial devices.
 
-License
+## License
 This project is open-source. Feel free to modify and share it under the applicable license.
