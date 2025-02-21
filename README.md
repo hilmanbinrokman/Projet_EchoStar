@@ -1,19 +1,18 @@
 # Projet EchoStar
-### Authors
+### Auteurs
 *Hilman Bin Rokman*  
 *Anissa Boumahdi*
 
 ## Description
 
-This project interfaces an EchoStar module with a BME680 environmental sensor. The system reads temperature, humidity, pressure, and gas resistance values from the BME680 sensor and transmits the data via serial communication. The project is designed to be used with an MCU that forwards serial signals between USB and the EchoStar module.
+Ce projet permet de faire l'interface entre un module EchoStar et un capteur BME680 via un microcontrôleur. Il réalise la transmission des données du capteur vers le module EchoStar et affiche les valeurs mesurées sur un port série USB. Le code prend en charge la gestion de l'alimentation et la configuration du capteur pour mesurer la température, l'humidité, la pression atmosphérique et la résistance des gaz.
 
-## Features
+## Matériel requis
 
-Reads environmental data from the BME680 sensor (temperature, pressure, humidity, gas resistance).  
-Forwards data between USB and EchoStar module.  
-Supports switching control signals via serial commands.  
-Uses I2C communication for sensor data acquisition.  
-Handles sensor initialization and configuration.  
+- Microcontrôleur compatible avec la bibliothèque Adafruit BME680  
+- Capteur BME680 (via I2C)  
+- Module EchoStar  
+- Câblage pour connexion I2C et UART  
 
 ## Hardware Requirements
 Microcontroller with USB and serial communication support  
