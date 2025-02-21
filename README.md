@@ -20,10 +20,11 @@ Avant d'utiliser ce programme, assurez-vous d'avoir installé les bibliothèques
 - Adafruit Sensor
 - Wire.h et SPI.h (inclus dans l'IDE Arduino)
 
-## Installation
-Arduino IDE (or compatible environment)  
-Adafruit BME680 Library (GitHub Repo)  
-Wire and SPI libraries  
+## Configuration et Paramètres
+Ce programme utilise les paramètres suivants :
+- `SENSORS_BME680_ADDRESS` : Adresse I2C du capteur BME680.
+- `SEALEVELPRESSURE_HPA` : Pression atmosphérique de référence (1013,25 hPa par défaut).
+- `SWITCH_REVERSING_CONTROL_DEFAULT_VALUE` : Contrôle du signal de commutation RF.
 
 
 
@@ -45,24 +46,17 @@ The system automatically forwards serial data and logs environmental readings.
 
 ## Dépannage
 - Le capteur BME680 n'est pas détecté ?
-
   - Vérifiez les connexions I2C.
+  - Assurez-vous que l'adresse I2C est correcte.
+  -Testez avec un scanner I2C.
 
-Assurez-vous que l'adresse I2C est correcte.
+- Données incorrectes ou instables ?
+  - Vérifiez l'alimentation du capteur.
+  - Assurez-vous que le capteur est éloigné des sources de chaleur ou d'humidité excessives.
 
-Testez avec un scanner I2C.
-
-Données incorrectes ou instables ?
-
-Vérifiez l'alimentation du capteur.
-
-Assurez-vous que le capteur est éloigné des sources de chaleur ou d'humidité excessives.
-
-Pas de communication avec EchoStar ?
-
-Vérifiez les connexions UART.
-
-Vérifiez le baudrate.
+- Pas de communication avec EchoStar ?
+  - Vérifiez les connexions UART.
+  - Vérifiez le baudrate.
 
 ## License
 Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le partager sous réserve de mentionner les auteurs originaux.
