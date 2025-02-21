@@ -70,4 +70,4 @@ Gas = 150.2 KOhms`
   - Vérifiez le baudrate.
 
 ## License
-Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le partager sous réserve de mentionner les auteurs originaux.
+Vous êtes libre de l'utiliser, de le modifier et de le partager sous réserve de mentionner les auteurs originaux.
