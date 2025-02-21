@@ -1,7 +1,7 @@
 # Projet EchoStar
 
 
-Description
+## Description
 
 This project interfaces an EchoStar module with a BME680 environmental sensor. The system reads temperature, humidity, pressure, and gas resistance values from the BME680 sensor and transmits the data via serial communication. The project is designed to be used with an MCU that forwards serial signals between USB and the EchoStar module.
 
@@ -15,8 +15,8 @@ Handles sensor initialization and configuration.
 
 ## Authors
 
-Hilman Bin Rokman
-Anissa Boumahdi
+Hilman Bin Rokman.
+Anissa Boumahdi.
 
 ## Hardware Requirements
 Microcontroller with USB and serial communication support
@@ -38,11 +38,11 @@ Monitor sensor readings via USB serial output.
 
 ## Code Overview
 
-setup()
+### setup()
 Initializes pins, serial communication, and the BME680 sensor.
 Configures oversampling and filtering for accurate readings.
 
-loop()
+### loop()
 Continuously reads sensor data.
 Sends sensor data via EchoStar module.
 Prints sensor values to USB serial output.
