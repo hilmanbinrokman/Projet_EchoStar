@@ -1,12 +1,6 @@
 
 /**
-   @brief This example will forward serial signal from the USB to EchoStar module and vice versa.
-          In another word, it will by pass the MCU.
-
-          The DPDT RF Switch control signal can be reversed by sending '*' character to the USB USB_SERIAL.
-
-   @author mtnguyen
-   @version 1.1.0
+   @author BIN ROKMAN Hilman, BOUMAHDI Anissa
 */
 #ifndef SENSORS_BME680_ADDRESS
 #error This board version do not has BME680, please check again your parameters!
@@ -35,22 +29,9 @@ void setup(void)
   pinMode(ECHOSTAR_PWR_ENABLE_PIN, OUTPUT);
   digitalWrite(ECHOSTAR_PWR_ENABLE_PIN, HIGH);
 #endif
-  //
-  //#if defined(DPDT_PWR_ENABLE_PIN)
-  //  pinMode(DPDT_PWR_ENABLE_PIN, OUTPUT);
-  //  digitalWrite(DPDT_PWR_ENABLE_PIN, HIGH);
-  //#endif
-  //  pinMode(DPDT_CTRL_PIN, OUTPUT);
-  //  digitalWrite(DPDT_CTRL_PIN, HIGH);
-  //
-  //  pinMode(ECHOSTAR_SWCTRL_PIN, INPUT);
-  //  attachInterrupt(digitalPinToInterrupt(ECHOSTAR_SWCTRL_PIN), swctrl_change_isr, CHANGE);
 
   USB_SERIAL.println("Starting...");
 
-  //  do_switch_ctrl_update();
-  //  USB_SERIAL.print("RF Switch reverse control: ");
-  //  USB_SERIAL.println(switch_reversing_control ? "ENABLE" : "DISABLE");
 
   ECHOSTAR_SERIAL.begin(115200);
   delay(1000);
@@ -87,7 +68,7 @@ void loop(void)
   {
     USB_SERIAL.write(ECHOSTAR_SERIAL.read());
   }
-  //USB_SERIAL.println();
+
 
   while (USB_SERIAL.available())
   {
