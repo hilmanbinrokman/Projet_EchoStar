@@ -14,23 +14,18 @@ Ce projet permet de faire l'interface entre un module EchoStar et un capteur BME
 - Module EchoStar  
 - Câblage pour connexion I2C et UART  
 
-## Hardware Requirements
-Microcontroller with USB and serial communication support  
-EchoStar module  
-BME680 environmental sensor  
-Required wiring and power components  
+## Dépendances
+Avant d'utiliser ce programme, assurez-vous d'avoir installé les bibliothèques suivantes :
+- Adafruit BME680 
+- Adafruit Sensor
+- Wire.h et SPI.h (inclus dans l'IDE Arduino)
 
-## Software Requirements
+## Installation
 Arduino IDE (or compatible environment)  
 Adafruit BME680 Library (GitHub Repo)  
 Wire and SPI libraries  
 
-## Installation and Setup
-Connect the BME680 sensor to the MCU via I2C (SDA, SCL).  
-Connect the EchoStar module to the appropriate UART pins.  
-Install required libraries in the Arduino IDE.  
-Upload the provided code to the microcontroller.  
-Monitor sensor readings via USB serial output.  
+
 
 ## Code Overview
 
@@ -48,10 +43,26 @@ Ensure the hardware connections are correct and power is supplied.
 Open the serial monitor (115200 baud) to view sensor readings.  
 The system automatically forwards serial data and logs environmental readings.  
 
-## Troubleshooting
-If the BME680 sensor is not detected, check the wiring and I2C address.  
-Ensure the EchoStar module is correctly powered and connected.  
-Verify baud rates match between serial devices.  
+## Dépannage
+- Le capteur BME680 n'est pas détecté ?
+
+  - Vérifiez les connexions I2C.
+
+Assurez-vous que l'adresse I2C est correcte.
+
+Testez avec un scanner I2C.
+
+Données incorrectes ou instables ?
+
+Vérifiez l'alimentation du capteur.
+
+Assurez-vous que le capteur est éloigné des sources de chaleur ou d'humidité excessives.
+
+Pas de communication avec EchoStar ?
+
+Vérifiez les connexions UART.
+
+Vérifiez le baudrate.
 
 ## License
-This project is open-source. Feel free to modify and share it under the applicable license.  
+Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le partager sous réserve de mentionner les auteurs originaux.
