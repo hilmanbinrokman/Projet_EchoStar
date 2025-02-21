@@ -7,40 +7,40 @@ This project interfaces an EchoStar module with a BME680 environmental sensor. T
 
 ## Features
 
-Reads environmental data from the BME680 sensor (temperature, pressure, humidity, gas resistance).
-Forwards data between USB and EchoStar module.
-Supports switching control signals via serial commands.
-Uses I2C communication for sensor data acquisition.
-Handles sensor initialization and configuration.
+Reads environmental data from the BME680 sensor (temperature, pressure, humidity, gas resistance).  
+Forwards data between USB and EchoStar module.  
+Supports switching control signals via serial commands.  
+Uses I2C communication for sensor data acquisition.  
+Handles sensor initialization and configuration.  
 
 ## Authors
 
-Hilman Bin Rokman.
-Anissa Boumahdi.
+Hilman Bin Rokman  
+Anissa Boumahdi
 
 ## Hardware Requirements
-Microcontroller with USB and serial communication support
-EchoStar module
-BME680 environmental sensor
-Required wiring and power components
+Microcontroller with USB and serial communication support  
+EchoStar module  
+BME680 environmental sensor  
+Required wiring and power components  
 
 ## Software Requirements
-Arduino IDE (or compatible environment)
-Adafruit BME680 Library (GitHub Repo)
-Wire and SPI libraries
+Arduino IDE (or compatible environment)  
+Adafruit BME680 Library (GitHub Repo)  
+Wire and SPI libraries  
 
 ## Installation and Setup
-Connect the BME680 sensor to the MCU via I2C (SDA, SCL).
-Connect the EchoStar module to the appropriate UART pins.
-Install required libraries in the Arduino IDE.
-Upload the provided code to the microcontroller.
-Monitor sensor readings via USB serial output.
+Connect the BME680 sensor to the MCU via I2C (SDA, SCL).  
+Connect the EchoStar module to the appropriate UART pins.  
+Install required libraries in the Arduino IDE.  
+Upload the provided code to the microcontroller.  
+Monitor sensor readings via USB serial output.  
 
 ## Code Overview
 
 ### setup()
-Initializes pins, serial communication, and the BME680 sensor.
-Configures oversampling and filtering for accurate readings.
+Initializes pins, serial communication, and the BME680 sensor.  
+Configures oversampling and filtering for accurate readings.  
 
 ### loop()
 Continuously reads sensor data.
