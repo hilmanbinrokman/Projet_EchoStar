@@ -28,16 +28,19 @@ Ce programme utilise les paramètres suivants :
 
 
 
-## Code Overview
+## Fonctionnalités principales
+1. Lecture des données du capteur BME680 :
+  - Température (°C)
+  - Humidité relative (%)
+  - Pression atmosphérique (hPa)
+  - Résistance des gaz (KOhms)
 
-`setup()`  
-Initializes pins, serial communication, and the BME680 sensor.  
-Configures oversampling and filtering for accurate readings.  
-
-`loop()`  
-Continuously reads sensor data.  
-Sends sensor data via EchoStar module.  
-Prints sensor values to USB serial output.  
+2. Transmission des données via UART vers le module EchoStar.
+3. Affichage des mesures sur le port série USB.
+4. Configuration automatique du capteur BME680 :
+  - Suréchantillonnage de la température, humidité et pression.
+  - Activation du filtre IIR pour la stabilité des mesures.
+  - Activation du chauffage de la résistance de gaz.
 
 ## Utilisation
 1. Démarrer le programme en connectant le microcontrôleur à votre PC.
@@ -46,11 +49,12 @@ Prints sensor values to USB serial output.
 4. Si nécessaire, envoyer des commandes UART au module EchoStar.
 
 ## Exemple de sortie
-`EchoStar BME680 Test
-Temperature = 24.5 *C
-Pressure = 1012.8 hPa
-Humidity = 50.3 %
+`EchoStar BME680 Test  
+Temperature = 24.5 *C  
+Pressure = 1012.8 hPa  
+Humidity = 50.3 %  
 Gas = 150.2 KOhms`
+
 ## Dépannage
 - Le capteur BME680 n'est pas détecté ?
   - Vérifiez les connexions I2C.
