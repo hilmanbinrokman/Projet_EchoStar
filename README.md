@@ -35,11 +35,11 @@ Monitor sensor readings via USB serial output.
 
 ## Code Overview
 
-`setup()`
+`setup()`  
 Initializes pins, serial communication, and the BME680 sensor.  
 Configures oversampling and filtering for accurate readings.  
 
-`loop()`
+`loop()`  
 Continuously reads sensor data.  
 Sends sensor data via EchoStar module.  
 Prints sensor values to USB serial output.  
