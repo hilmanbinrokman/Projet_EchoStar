@@ -49,11 +49,7 @@ Ce programme utilise les paramètres suivants :
 4. Si nécessaire, envoyer des commandes UART au module EchoStar.
 
 ## Exemple de sortie
-`EchoStar BME680 Test  
-Temperature = 24.5 *C  
-Pressure = 1012.8 hPa  
-Humidity = 50.3 %  
-Gas = 150.2 KOhms`
+`Temperature = 24.5 *C, Pressure = 1012.8 hPa, Humidity = 50.3 %, Gas = 150.2 KOhms`
 
 ## Dépannage
 - Le capteur BME680 n'est pas détecté ?
